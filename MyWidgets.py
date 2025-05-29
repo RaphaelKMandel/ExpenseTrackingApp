@@ -154,9 +154,9 @@ class BudgetTable(PandasTable):
         elif rgb < -1:
             rgb = -1
         if  rgb >= 0:
-            return QColor(0, 255 * rgb, 0)
+            return QColor.fromRgb(0, int(255 * rgb), 0)
         else:
-            return QColor(-255 * rgb, 0, 0)
+            return QColor.fromRgb(int(-255 * rgb), 0, 0)
 
 
 class RulesTable(PandasTable):

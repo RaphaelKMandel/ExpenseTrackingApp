@@ -158,9 +158,9 @@ class RulesData(DataFrame):
     
     def __init__(self, model, data=None, name="Rules"):
         if data is None:
-            data = {"Keyword": ["Trader Joes", "CVS", "STATE OF MD"],
+            data = {"Keyword": ["Trader Joes", "CVS", "GOOGLE"],
                     "Category": ["GROCERIES", "GROCERIES", "INCOME"],
-                    "Sub Category": ["Trader Joe's", "CVS/PHARMACY", "Raphe"],
+                    "Sub Category": ["Trader Joe's", "CVS/PHARMACY", "Person 1"],
                     "Count": [0, 0, 0]}
         self.functions = (self.set_keyword, self.set_category,
                           self.set_subcategory, self.set_nothing)

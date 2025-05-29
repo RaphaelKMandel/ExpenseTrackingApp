@@ -46,7 +46,7 @@ class MainWindow(QMainWindow):
         self.show()
 
     def set_title(self):
-        self.setWindowTitle(f"Arkie's Budgeting Application: {self.name}")
+        self.setWindowTitle(f"Budgeting Application: {self.name}")
 
     def load(self):
         self.file_dialog("load")
